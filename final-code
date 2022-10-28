@@ -1,0 +1,55 @@
+/*Icon box in one line. No dropping on mobile*/
+.elementor-icon-box-wrapper {
+    display: flex;
+}
+
+.elementor-icon-box-content {
+    padding: 8px;
+}
+
+/*Button hover effect*/
+.button-hover:hover .elementor-icon-box-title {
+		padding-left: 5px;
+		transition: 0.7s;
+	}
+
+.button-hover .elementor-icon-box-title {
+		transition: 0.7s;
+	}
+
+/*Changing the colour for bullet lists and padding*/
+.colour-bullet-points ul li{
+    list-style: none;
+    /*list-style-type:disc;*/
+    padding-bottom: 16px;
+}
+
+.colour-bullet-points ul li::before {
+  content: "•";
+  color: #00B4BC;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*Heights of internal hero sections*/
+.internal-hero {
+
+			/*tablet*/
+		@media (max-width: 1366px) {
+				max-height: 420px;
+    		height: 420px;
+		}
+		/*mobile*/
+		@media (max-width: 600px) {
+				max-height: 320px;
+    		height: 320px;
+		}
+
+		/* 601px and larger screen 			sizes */
+		@media (min-width:601px){
+		    max-height: 520px;
+    		height: 520px;
+		}
+}

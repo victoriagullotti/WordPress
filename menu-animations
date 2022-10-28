@@ -1,0 +1,12 @@
+.fa-window-minimize {
+  color: #061227;
+}
+
+.elementor-item:hover .fa-window-minimize {
+  color: #244aeb;
+}
+
+
+.far:active {
+  color: #244aeb;
+}

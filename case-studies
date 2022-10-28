@@ -1,0 +1,138 @@
+/************************************************************************
+There are four case studies: ARGENICA, AGRICULTURE, EMVISION and HAZER.
+Each case has SHOW and HIDE functions that hide a section/two sections
+ in Elementor.
+ Stile hides sections initially.
+ ********************************************************************/
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+jQuery(function($){
+
+    /*ARGENICA show*/
+$('.argenica-show').each(function(i){
+$(this).click(function(){ $('.argenica').eq(i).show();
+$('.argenica-show').eq(i).hide();
+$('.argenica-hide').eq(i).show();
+}); });
+
+    /*ARGENICA hide*/
+$('.argenica-hide').each(function(i){
+$(this).click(function(){ $('.argenica').eq(i).hide();
+$('.argenica-show').eq(i).show();
+$('.argenica-hide').eq(i).hide();
+}); });
+
+    /*AGRICULTURE show*/
+$('.agriculture-show').each(function(i){
+$(this).click(function(){ $('.agriculture').eq(i).show();
+$('.agriculture-show').eq(i).hide();
+$('.agriculture-hide').eq(i).show();
+$('.agriculture-text').eq(i).show();
+}); });
+
+    /*AGRICULTURE hide*/
+$('.agriculture-hide').each(function(i){
+$(this).click(function(){ $('.agriculture').eq(i).hide();
+$('.agriculture-show').eq(i).show();
+$('.agriculture-hide').eq(i).hide();
+$('.agriculture-text').eq(i).hide();
+}); });
+
+
+    /*EMVISION show*/
+$('.emvision-show').each(function(i){
+$(this).click(function(){ $('.emvision').eq(i).show();
+$('.emvision-show').eq(i).hide();
+$('.emvision-hide').eq(i).show();
+}); });
+
+    /*EMVISION hide*/
+$('.emvision-hide').each(function(i){
+$(this).click(function(){ $('.emvision').eq(i).hide();
+$('.emvision-show').eq(i).show();
+$('.emvision-hide').eq(i).hide();
+}); });
+
+    /*HAZER show*/
+$('.hazer-show').each(function(i){
+$(this).click(function(){ $('.hazer').eq(i).show();
+$('.hazer-show').eq(i).hide();
+$('.hazer-hide').eq(i).show();
+$('.hazer-text').eq(i).show();
+}); });
+
+    /*HAZER hide*/
+$('.hazer-hide').each(function(i){
+$(this).click(function(){ $('.hazer').eq(i).hide();
+$('.hazer-show').eq(i).show();
+$('.hazer-hide').eq(i).hide();
+$('.hazer-text').eq(i).hide();
+}); });
+
+
+}); });
+</script>
+
+
+
+<style>
+
+/*Argenica Style*/
+.argenica-show{
+cursor: pointer;
+}
+.argenica-hide{
+cursor: pointer;
+display: none;
+}
+.argenica{
+    display: none;
+}
+
+/*Wide open agriculture style*/
+.agriculture-show{
+cursor: pointer;
+}
+.agriculture-hide{
+cursor: pointer;
+display: none;
+}
+.agriculture{
+    display: none;
+}
+.agriculture-text{
+    display: none;
+}
+
+
+/*EMVISION style*/
+.emvision-show{
+cursor: pointer;
+}
+.emvision-hide{
+cursor: pointer;
+display: none;
+}
+.emvision{
+    display: none;
+}
+
+/*Hazer style*/
+.hazer-show{
+cursor: pointer;
+}
+.hazer-hide{
+cursor: pointer;
+display: none;
+}
+.hazer{
+    display: none;
+}
+.hazer-text{
+    display: none;
+}
+
+
+</style>
