@@ -1,0 +1,15 @@
+selector.elementor-sticky--effects{
+   background-color:rgba(0, 0, 0)!important
+}
+
+selector{
+   transition: background-color 4s ease !important;
+}
+
+selector.elementor-sticky--effects >.elementor-container{
+   min-height: 60px;
+}
+
+selector > .elementor-container{
+   transition: min-height 1s ease !important;
+}

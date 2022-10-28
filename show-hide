@@ -1,0 +1,17 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+jQuery(function($){
+$('.clicktoshow').each(function(i){
+$(this).click(function(){ $('.showclick').eq(i).show();
+$('.clicktoshow').eq(i).hide();
+}); });
+}); });
+</script>
+<style>
+.clicktoshow{
+cursor: pointer;
+}
+.showclick{
+display: none;
+}
+</style>
